@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        legend
+        {
+            text-align: center;
+        }
+        table
+        {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><b>Student Registration Form</b></legend>
+
+            <h4>Instructions : </h4>
+            <ul>
+                <li>Respect Others And Follow event Rules. </li>
+                <li>Everyone Should Follow The Dress Code</li>
+                <li>Alchol And Any Drug Items Are Prohibited</li>
+                <li>If Emergency Contact : <b>1234567890</b> </li>
+                <li>Event Starts From <b>14-12-2024 At 10:00 AM</b>  to <b>16-12-2024 At 5:00 PM</b> </li>
+                <li><b>venue :</b> 123, ABC Street, XYZ City</li>
+            </ul>
+
+
+            <h4>Events : </h4>
+
+            <ol>
+                <ol type="A">
+                    <h4>Technical  Activities</h4>
+                    <li>Debate Competition</li>
+                    <li>Photography</li>
+                    <li>Student Seminars And Workshops</li>
+                    <li>Hacathon</li>
+                    <li>Coding Competition</li>
+                    <li>Tech Quiz</li>
+                </ol>
+                <ol type="i">
+                    <h4>Career Counselling</h4>
+                    <li>Speach By Respected Director.</li>
+                    <li>Alumni Meet</li>
+                    
+                </ol>
+                <ol type="I">
+                    <h4>Cultural  Activities</h4>
+                    <li>Dance Competition</li>
+                    <li>Music Talent Show</li>
+                    <li>Drama (or) Skits</li>
+                    <li>Celebration Of The Event</li>
+                </ol>
+                
+            </ol>
+            
+            <table >
+                <thead>
+                    <tr>
+                        <th>Necessary Details To  Be Filled : </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td><label for="fname" >First Name : </label></td>
+                    <td><input type="text" name="lname" id="fname" 
+                        placeholder="Enter your first name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last Name : </label></td>
+                    <td><input type="text" name="lanme" id="lanme" 
+                        placeholder="Enter your lasst name"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number : </label></td>
+                    <td><input type="text" name="phone" id="phone" 
+                        placeholder="Enter your phone number" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Alternate Phone Number : </label></td>
+                    <td><input type="text" name="phone" id="phone" 
+                    placeholder="Enter alternate phone number"></td>
+                </tr>
+                <tr>
+                    <td><label for="profile">Your Photo : </label></td>
+                    <td><input type="file" name="profile" id="profile" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender : </label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male" /> Male
+                        <input type="radio" name="gender" id="female" value="female" /> Female
+                        <input type="radio" name="gender" id="other" value="other" /> Others
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email : </label></td>
+                    <td><input type="email" id="email"
+                        placeholder="Enter your email here" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date Of Birth : </label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="rollno">Roll Number : </label></td>
+                    <td><input name="rollno" id="rollno" 
+                        placeholder="Enter your roll number" required></td>
+                </tr>
+                <tr>
+                    <td><label for="add">Address : </label></td>
+                    <td><textarea name="address" id="add"
+                        placeholder="Your present address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="course">Branch : </label></td>
+                    <td>
+                        <select name="Course" id="branch">
+                            <optgroup label="branch">
+                            <option value="Branch">--------------------</option>
+                            <option value="CSM">CSM</option>
+                            <option value="cse">CSE</option>
+                            <option value="civil">CSD</option>
+                            <option value="it">IT</opotion>
+                            <option value="mech">MECHANICAL</option>
+                            <option value="eee">ELECTRICAL</option>
+                            <option value="mba">MBA</option>
+                            <option value="mcs">MCA</option>
+                            <option value="mtech">MTECH</option>
+                            </optgroup>
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="year">Year : </label></td>
+                    <td>
+                        <select name="year" id="year">
+                            <optgroup>
+                                <option value="Year">---------</option>
+                                <option value="1">1st Year</option>
+                                <option value="2">2nd Year</option>
+                                <option value="3">3rd Year</option>
+                                <option value="4">4th Year</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="sec">Section : </label></td>
+                    <td>
+                        <select name="sec" id="sec">
+                            <optgroup>
+                                <option value="sec">---------</option>
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+            </table><br><br>
+            <table >
+                <thead>
+                    <tr>
+                        <th>Details To Be Fill By Day-Scholars :</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td><label for="Distance">Distance Detween Your Home And College :</label></td>
+                    <td><input type="number" id="Distance"
+                        placeholder="IN Kilometers"></td>
+                </tr>
+                <tr>
+                    <td><label for="input">Are you willing To Stay After College Hours: </label></td>
+                    <td>
+                    <input type="checkbox" name="input" id="yes" value="yes">YES
+                    <input type="checkbox" name="input" id="no" value="no">NO
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="time">Entry Time : </label></td>
+                    <td><input type="time" name="time" id="time"></td>
+                </tr>
+                <tr>
+                    <td><label for="time1">Exit Time : </label></td>
+                    <td><input type="time"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Gate Pass : </label></td>
+                    <td><input type="file" name="pass" id="pass"></td>
+                </tr>
+                <tr>
+                    <td><label for="want">Willing To Participate In Other Activites : </label></td>
+                    <td>
+                    <input type="radio" name="want" id="yes" value="yes">YES
+                    <input type="radio" name="want" id="no" value="no">NO
+                    </td>
+                </tr>
+            </table><br>
+
+            <table >
+                <thead>
+                    <tr>
+                        <th>Details To Be Fill By Hostlers : </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td><label for="time2">Available After : </label></td>
+                    <td><input type="time" name="time2" id="time2"></td>
+                </tr>
+                <tr>
+                    <td><label for="op">Available In Late Nights : </label></td>
+                    <td><input type="radio"name="op" id="yes" value="yes">YES
+                    <input type="radio" name="op" id="no" value="no">NO</td>
+                </tr>
+                <tr>
+                    <td><label for="want">Participate In Other Activites : </label></td>
+                    <td>
+                    <input type="radio" name="want" id="yes" value="yes">YES
+                    <input type="radio" name="want" id="no" value="no">NO
+                    </td>
+                </tr>
+            </table><br>
+
+            <fieldset>
+                <legend>TERMS & CONDITIONS</legend>
+                <input type="checkbox" required>I agree to all college & campus procedures and rules. <br>
+                <input type="checkbox" required>I will be responsible for my actions in the college area. <br>
+            </fieldset><br><br>
+        <button>SUBMIT</button>
+        <button>RESET</button>
+        </fieldset>
+    </form>
+</body>
+</html>
